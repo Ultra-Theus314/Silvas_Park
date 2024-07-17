@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/estilo.css">
+        <title>Fale Conosco</title>
+    </head>
+    <body>
+     <div class="caixa_faleconosco">
+       <div class="cabeca_caixa_faleconosco">
+               <tr><h1 style="text-align: center;">Fale Conosco:</h1></tr>
+       </div>
+        <div id="contato form">
+           <form id="form1" name="form1" method="post" action="enviarEmail.php">
+                <table width="500" border="0" align="center" cellpadding="0" cellspacing="2">
+                    
+                         <tr>
+                              <td align="right">Nome:</td>
+                              <td><input type="text" oninput="this.value = this.value.replace (/[^a-zA-ZáÁéÉíÍóÓúÚâÂêÊîÎôÔûÛãÃõÕÔ ]/g,''); this.value = this.value.toUpperCase();" id="caixaalta" name="nome_comp" type="text" placeholder="Nome Completo" required></td>
+                         </tr>
+                         <tr>
+                              <td align="right">Assunto:</td>
+                              <td><input  name="assunto" id="assunto" oninput="this.value = this.value.replace (/[^a-zA-ZáÁéÉíÍóÓúÚâÂêÊîÎôÔûÛãÃõÕÔ 12345678910 ]/g,''); this.value = this.value.toUpperCase();" id="caixaalta" name="assunto"    placeholder="assunto" required></td></td>
+                            
+                            
+                         </tr>
+                         <tr>
+                              <td align="right">Mensagem:</td>
+                              <td><textarea name="Mensagem" id="mensagem" cols="45" rows="5"  oninput="this.value = this.value.replace (/[^a-zA-ZáÁéÉíÍóÓúÚâÂêÊîÎôÔûÛãÃõÕÔ 12345678910 ]/g,'');; this.value = this.value.toUpperCase();"></textarea></td>        
+                         </tr>
+                         <tr> 
+                              <td colspan="2" align="center"><input type="submit" value="Enviar" /></td>
+                         </tr>
+                </table>
+           </form>
+         </div>
+     </div>
+    </body>
+</html>

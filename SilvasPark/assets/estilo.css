@@ -1,0 +1,111 @@
+* 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(../assets/img/Estacionamento_bolado.jpeg) no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+  
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+.dropdown {
+ float: left;
+ overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+ font-size: 16px;  
+ border: none;
+ outline: none;
+ color: white;
+ padding: 14px 16px;
+ background-color: inherit;
+ font-family: inherit;
+ margin: 0;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+ background-color: #FFE300;
+}
+  
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f9f9f9;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+  
+.dropdown-content a {
+ float: none;
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ text-align: left;
+}
+  
+.dropdown-content a:hover {
+ background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+
+.frame_responsivo {
+ overflow: hidden;
+ display: block;
+ border: none;
+ height: 100vh;
+ width: 100vw;   
+}
+
+.foto_home {
+ text-align: center;
+ min-width: 30%;
+}
+
+.caixa_home {
+  background-color: #FFE300;
+  border-radius: 10%;
+  width: 400px;
+  min-width: 600px;
+  margin: auto;
+ }
+ 
+.caixa_cabeca_home {
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  color: #fafafa;
+  text-align: center;
+}
+
+.caixa_faleconosco {
+  background-color: #FFE300;
+  width: 60%;
+  height: 50%;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cabeca_caixa_faleconosco {
+  background-color: #000;
+  color: #fafafa;
+  border-radius: 5px;
+}
+

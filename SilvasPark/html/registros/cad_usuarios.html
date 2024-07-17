@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/estilo.css">
+    <script src="../../assets/JS/jscript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="caixa_usuario" align="center">
+        <div class="cabeca_caixa_usuario" align="center">
+            <h1> Cadastro de Usuários</h1>
+        </div>
+        <form class="form" method="post" action="../../php/cad_usuarios.php">
+                <label for="nome"> Nome Completo </label>
+                <br>
+                <input oninput="this.value = this.value.toUpperCase();" id="nome" onchange="validarNome()" name="nome_comp" type="text" placeholder="Nome Completo" required> 
+                <br>
+                <br>
+                <label for="nome_usu"> Nome de Usuário </label>
+                <br>
+                <input oninput="this.value = this.value.toUpperCase();" id="usuario" onchange="validarUsuario()" name="nome_usu" type="text" placeholder="Nome Usuário" required> 
+                <br>
+                <br>
+                <label for="email"> Email </label>
+                <br>
+                <input oninput="this.value = this.value.toLowerCase();" id="email" onchange="validarEmail()" name="email" type="email" placeholder="Email" required> 
+                <div id="checkmailerro" style="color: red;"></div>
+                <div id="checkmailok" style="color: green;"></div>
+                <br>
+                <br>
+                <label for="senha"> Senha </label>
+                <br>
+                <input id="senha" name="password" type="password" placeholder="Senha" required> 
+                <br>
+                <br>
+                <button id="botao_cad" type="submit"> Salvar </button>
+        </form>
+    </div>
+</body>
+</html>
